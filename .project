@@ -17,9 +17,34 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>kat-7719528943218859828.groovy</name>
+			<name>kat-3867307213087445653.groovy</name>
 			<type>1</type>
-			<location>C:/Users/rahad/AppData/Local/Temp/Katalon/Web Services/kat-7719528943218859828.groovy</location>
+			<location>C:/Users/rahad/AppData/Local/Temp/Katalon/Web Services/kat-3867307213087445653.groovy</location>
+		</link>
+		<link>
+			<name>kat-4303982187677508401.groovy</name>
+			<type>1</type>
+			<location>C:/Users/rahad/AppData/Local/Temp/Katalon/Web Services/kat-4303982187677508401.groovy</location>
+		</link>
+		<link>
+			<name>kat-5002439816469633114.groovy</name>
+			<type>1</type>
+			<location>C:/Users/rahad/AppData/Local/Temp/Katalon/Web Services/kat-5002439816469633114.groovy</location>
+		</link>
+		<link>
+			<name>kat-527658712866565927.groovy</name>
+			<type>1</type>
+			<location>C:/Users/rahad/AppData/Local/Temp/Katalon/Web Services/kat-527658712866565927.groovy</location>
+		</link>
+		<link>
+			<name>kat-5628476082139203139.groovy</name>
+			<type>1</type>
+			<location>C:/Users/rahad/AppData/Local/Temp/Katalon/Web Services/kat-5628476082139203139.groovy</location>
+		</link>
+		<link>
+			<name>kat-6098253401421428837.groovy</name>
+			<type>1</type>
+			<location>C:/Users/rahad/AppData/Local/Temp/Katalon/Web Services/kat-6098253401421428837.groovy</location>
 		</link>
 	</linkedResources>
 	<filteredResources>
@@ -124,6 +149,24 @@
 		</filter>
 		<filter>
 			<id>1694938500768</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695013914220</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695013914231</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
