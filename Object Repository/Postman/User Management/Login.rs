@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Task Quantity</name>
+   <name>Login</name>
    <tag></tag>
-   <elementGuidId>b7b0c6a2-ee56-4976-adcf-c0693b9cd988</elementGuidId>
+   <elementGuidId>101d7f71-54d6-4f9e-b3d3-964dba418891</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{ \r\n    \&quot;user\&quot;: {\r\n        \&quot;email\&quot;: \&quot;5b734781395@lamasticots.com\&quot;,\r\n        \&quot;password\&quot;: \&quot;password\&quot; \r\n        // \&quot;email\&quot;: \&quot;udin@mail.ac.id\&quot;,\r\n        // \&quot;password\&quot;: \&quot;passworddd\&quot; \r\n        // \&quot;email\&quot;: \&quot;teodulo544@lmaritimen.com\&quot;,\r\n        // \&quot;password\&quot;: \&quot;passworddd\&quot;\r\n        // \&quot;email\&quot;: \&quot;usmanismail@mail.com\&quot;,\r\n        // \&quot;password\&quot;: \&quot;passworddd\&quot;\r\n    } \r\n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://qarpa.fly.dev/api/v1/employee/management_works/amount</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${BASE_URL}users/auth/signin</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,22 +32,9 @@
    <variables>
       <defaultValue>GlobalVariable.BASE_URL</defaultValue>
       <description></description>
-      <id>310ae743-6a8d-4325-bc19-53c50783c07f</id>
+      <id>b6a6d856-dccf-4249-aab3-06c5a77f04ae</id>
       <masked>false</masked>
       <name>BASE_URL</name>
    </variables>
-   <verificationScript>import static org.assertj.core.api.Assertions.*
-
-import com.kms.katalon.core.testobject.RequestObject
-import com.kms.katalon.core.testobject.ResponseObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webservice.verification.WSResponseManager
-
-import groovy.json.JsonSlurper
-import internal.GlobalVariable as GlobalVariable
-
-RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
-
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Task Monitoring - Employee</name>
+   <name>Reset Passowrd - Request Token</name>
    <tag></tag>
-   <elementGuidId>7a4aa156-8b51-4b45-8637-34c4816c4c28</elementGuidId>
+   <elementGuidId>6a822737-a094-4c08-bf7b-ac72590897a3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{ \r\n    \&quot;email\&quot;: \&quot;teodulo544@lmaritimen.com\&quot; \r\n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://qarpa.fly.dev/api/v1/employee/management_works</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${BASE_URL}users/password/forgot</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,22 +32,9 @@
    <variables>
       <defaultValue>GlobalVariable.BASE_URL</defaultValue>
       <description></description>
-      <id>552f0fd0-3dcc-4561-a94b-8f04246e1828</id>
+      <id>b96b86a0-d538-42e8-bd4b-22e4f1f47bd8</id>
       <masked>false</masked>
       <name>BASE_URL</name>
    </variables>
-   <verificationScript>import static org.assertj.core.api.Assertions.*
-
-import com.kms.katalon.core.testobject.RequestObject
-import com.kms.katalon.core.testobject.ResponseObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webservice.verification.WSResponseManager
-
-import groovy.json.JsonSlurper
-import internal.GlobalVariable as GlobalVariable
-
-RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
-
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Task Monitoring - Owner</name>
+   <name>Current User</name>
    <tag></tag>
-   <elementGuidId>49e2c93f-7c7b-4e76-b776-956a45f8cba2</elementGuidId>
+   <elementGuidId>a1f44f4f-f36e-4b55-abe3-ecddd547a608</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
@@ -16,7 +16,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://qarpa.fly.dev/api/v1/management_works</restUrl>
+   <restUrl>${BASE_URL}users/current</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,22 +28,9 @@
    <variables>
       <defaultValue>GlobalVariable.BASE_URL</defaultValue>
       <description></description>
-      <id>29752a05-c7df-4da2-bcfa-87deda87299e</id>
+      <id>ead778b3-a83b-4259-86c8-f03e20bd59cf</id>
       <masked>false</masked>
       <name>BASE_URL</name>
    </variables>
-   <verificationScript>import static org.assertj.core.api.Assertions.*
-
-import com.kms.katalon.core.testobject.RequestObject
-import com.kms.katalon.core.testobject.ResponseObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webservice.verification.WSResponseManager
-
-import groovy.json.JsonSlurper
-import internal.GlobalVariable as GlobalVariable
-
-RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
-
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
