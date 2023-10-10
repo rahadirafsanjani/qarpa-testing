@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suites - Owner - 01" time="3.523" tests="2" failures="0" errors="0">
+   <testsuite name="Test Suites - Owner - 01" tests="2" failures="0" errors="0" time="3.523" skipped="0" timestamp="2023-10-10 19:42:00" hostname="rahad - Totsuka" id="Test Suites/Test Suites - Owner - 01">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\rahad\\Main\\Source Code\\qarpa-testing\\Reports\\20231010_194156\\Test Suites - Owner - 01\\20231010_194157"/>
+         <property name="logFiles" value="C:\\Users\\rahad\\Main\\Source Code\\qarpa-testing\\Reports\\20231010_194156\\Test Suites - Owner - 01\\20231010_194157\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="rahad - Totsuka"/>
+         <property name="hostAddress" value="10.20.30.5"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Test Groovy" time="2.49" classname="Test Cases/Test Groovy" status="PASSED">
+         <system-out><![CDATA[2023-10-10 19:42:01 - [TEST_CASE][PASSED] - Test Cases/Test Groovy: Test Cases/Test Groovy
+
+2023-10-10 19:42:01 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("User Management/Login", ["BASE_URL":BASE_URL])): Send request successfully
+
+2023-10-10 19:42:03 - [MESSAGE][INFO] - HAR: C:\Users\rahad\Main\Source Code\qarpa-testing\Reports\20231010_194156\Test Suites - Owner - 01\20231010_194157\requests\main\0.har
+
+2023-10-10 19:42:03 - [MESSAGE][PASSED] - Send request successfully
+
+2023-10-10 19:42:03 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2023-10-10 19:42:03 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2023-10-10 19:42:03 - [TEST_STEP][PASSED] - println("extracted here : " + access_token): null
+
+2023-10-10 19:42:03 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+2023-10-10 19:42:03 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-10-10 19:42:03 - [TEST_STEP][PASSED] - authToken = access_token: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Test Dynamic Token" time="0.812" classname="Test Cases/Test Dynamic Token" status="PASSED">
+         <system-out><![CDATA[2023-10-10 19:42:03 - [TEST_CASE][PASSED] - Test Cases/Test Dynamic Token: Test Cases/Test Dynamic Token
+
+2023-10-10 19:42:03 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Task Management/Task Creations", ["BASE_URL":BASE_URL, "TOKEN":authToken])): Send request and verify the response successfully
+
+2023-10-10 19:42:04 - [MESSAGE][INFO] - HAR: C:\Users\rahad\Main\Source Code\qarpa-testing\Reports\20231010_194156\Test Suites - Owner - 01\20231010_194157\requests\main\1.har
+
+2023-10-10 19:42:04 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-10-10 19:42:04 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-10-10 19:42:04 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-10-10 19:42:04 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-10-10 19:42:04 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-10-10 19:42:04 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-10-10 19:42:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2023-10-10 19:42:04 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-10-10 19:42:00 - [TEST_SUITE][PASSED] - Test Suites - Owner - 01: Test Cases/Test Dynamic Token]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
