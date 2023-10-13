@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suites - Owner - 01,,,,2023-10-13 09:47:28,2023-10-13 09:47:32,3.664s,FAILED
+,,,,,,,
+Test Cases/User Management/Login,,,,2023-10-13 09:47:28,2023-10-13 09:47:31,2.571s,PASSED
+"response = sendRequest(findTestObject(""User Management/Login"", [""BASE_URL"":BASE_URL, ""EMAIL"":EMAIL, ""PASS"":PASS]))",,,,2023-10-13 09:47:29,2023-10-13 09:47:31,2.129s,PASSED
+"verifyResponseStatusCode(response, 200, STOP_ON_FAILURE)",,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.015s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.008s,PASSED
+jsonResponse = jsonSlurper.parseText(response.getResponseBodyContent()),,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.016s,PASSED
+emailFromResponse = email,,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.006s,PASSED
+nameFromResponse = name,,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.001s,PASSED
+roleFromResponse = role,,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.000s,PASSED
+accessToken = access_token,,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.001s,PASSED
+refreshToken = refresh_token,,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.000s,PASSED
+"proplist = [emailFromResponse, nameFromResponse, roleFromResponse]",,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.001s,PASSED
+"expectedResult = [EMAIL, NAME, ROLE]",,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.001s,PASSED
+"for ([i = 0, i < proplist.size(), (i++)])",,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.028s,PASSED
+"checkToken = [accessToken, refreshToken]",,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.000s,PASSED
+"for ([i = 0, i < checkToken.size(), (i++)])",,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.012s,PASSED
+authToken = accessToken,,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.001s,PASSED
+"println(""extracted here : "" + accessToken)",,,,2023-10-13 09:47:31,2023-10-13 09:47:31,0.003s,PASSED
+,,,,,,,
+Test Cases/Task Management - Owner POV/TC-001,,,,2023-10-13 09:47:31,2023-10-13 09:47:32,0.876s,FAILED
+"response = sendRequestAndVerify(findTestObject(""Task Management/Task Creations"", [""BASE_URL"":BASE_URL, ""TOKEN"":authToken]))",,,,2023-10-13 09:47:31,2023-10-13 09:47:32,0.618s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,2023-10-13 09:47:32,2023-10-13 09:47:32,0.016s,FAILED

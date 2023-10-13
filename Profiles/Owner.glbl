@@ -24,4 +24,14 @@
       <initValue>'passworddd'</initValue>
       <name>PASS</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Hafiz'</initValue>
+      <name>NAME</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'owner'</initValue>
+      <name>ROLE</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

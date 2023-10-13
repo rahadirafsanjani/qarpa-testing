@@ -17,16 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('User Management/Login', [('BASE_URL') : GlobalVariable.BASE_URL]))
-
-def slurper = new groovy.json.JsonSlurper()
-
-def result = slurper.parseText(response.getResponseBodyContent())
-
-println('extracted here : ' + result.access_token)
-
-// Verify the response
-WS.verifyResponseStatusCode(response, 200, FailureHandling.STOP_ON_FAILURE)
-
-// Store specific values in global variables
-GlobalVariable.authToken = result.access_token

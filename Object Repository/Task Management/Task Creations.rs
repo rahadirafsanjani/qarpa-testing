@@ -20,7 +20,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;management_work\&quot;: {\n        \&quot;task\&quot;: \&quot;Menghitung Laba Keuntungan\&quot;,\n        \&quot;description\&quot;: \&quot;Penghitungan laba pada bulan Agustus\&quot;,\n        \&quot;start_at\&quot;: \&quot;2023-9-21\&quot;,\n        \&quot;end_at\&quot;: \&quot;2023-9-21\&quot;,\n        \&quot;user_id\&quot;: 58\n    }\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;management_work\&quot;: {\n        \&quot;task\&quot;: \&quot;${task}\&quot;,\n        \&quot;description\&quot;: \&quot;${description}\&quot;,\n        \&quot;start_at\&quot;: \&quot;${start_at}\&quot;,\n        \&quot;end_at\&quot;: \&quot;${end_at}\&quot;,\n        \&quot;user_id\&quot;: \&quot;${user_id}\&quot;\n    }\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

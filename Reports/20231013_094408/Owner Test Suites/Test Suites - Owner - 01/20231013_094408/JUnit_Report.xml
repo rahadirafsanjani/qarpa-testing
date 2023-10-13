@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suites - Owner - 01" time="3.951" tests="2" failures="0" errors="0">
+   <testsuite name="Test Suites - Owner - 01" tests="2" failures="0" errors="0" time="3.951" skipped="0" timestamp="2023-10-13 09:44:10" hostname="rahad - Totsuka" id="Test Suites/Owner Test Suites/Test Suites - Owner - 01">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\rahad\\Main\\Source Code\\qarpa-testing\\Reports\\20231013_094408\\Owner Test Suites\\Test Suites - Owner - 01\\20231013_094408"/>
+         <property name="logFiles" value="C:\\Users\\rahad\\Main\\Source Code\\qarpa-testing\\Reports\\20231013_094408\\Owner Test Suites\\Test Suites - Owner - 01\\20231013_094408\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="rahad - Totsuka"/>
+         <property name="hostAddress" value="192.168.1.5"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+      </properties>
+      <testcase name="Test Cases/User Management/Login" time="2.865" classname="Test Cases/User Management/Login" status="PASSED">
+         <system-out><![CDATA[2023-10-13 09:44:10 - [TEST_CASE][PASSED] - Test Cases/User Management/Login: Test Cases/User Management/Login
+
+2023-10-13 09:44:11 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("User Management/Login", ["BASE_URL":BASE_URL, "EMAIL":EMAIL, "PASS":PASS])): Send request successfully
+
+2023-10-13 09:44:13 - [MESSAGE][INFO] - HAR: C:\Users\rahad\Main\Source Code\qarpa-testing\Reports\20231013_094408\Owner Test Suites\Test Suites - Owner - 01\20231013_094408\requests\main\0.har
+
+2023-10-13 09:44:13 - [MESSAGE][PASSED] - Send request successfully
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+2023-10-13 09:44:13 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response.getResponseBodyContent()): null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - emailFromResponse = email: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - nameFromResponse = name: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - roleFromResponse = role: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - accessToken = access_token: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - refreshToken = refresh_token: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - proplist = [emailFromResponse, nameFromResponse, roleFromResponse]: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - expectedResult = [EMAIL, NAME, ROLE]: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - for ([i = 0, i < proplist.size(), (i++)]): Actual object 'owner' and expected object 'owner' are equal
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - verifyEqual(proplist[i], expectedResult[i], CONTINUE_ON_FAILURE): Actual object 'xahapa4844@czilou.com' and expected object 'xahapa4844@czilou.com' are equal
+
+2023-10-13 09:44:13 - [MESSAGE][PASSED] - Actual object 'xahapa4844@czilou.com' and expected object 'xahapa4844@czilou.com' are equal
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - verifyEqual(proplist[i], expectedResult[i], CONTINUE_ON_FAILURE): Actual object 'Hafiz' and expected object 'Hafiz' are equal
+
+2023-10-13 09:44:13 - [MESSAGE][PASSED] - Actual object 'Hafiz' and expected object 'Hafiz' are equal
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - verifyEqual(proplist[i], expectedResult[i], CONTINUE_ON_FAILURE): Actual object 'owner' and expected object 'owner' are equal
+
+2023-10-13 09:44:13 - [MESSAGE][PASSED] - Actual object 'owner' and expected object 'owner' are equal
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - checkToken = [accessToken, refreshToken]: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - for ([i = 0, i < checkToken.size(), (i++)]): Actual object 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1NywiZXhwIjoxNjk3MjUxNDUyfQ.IQDnc5HA_1DuS-UlE6dZkZgth2lRymeTAnI2ldxUftw' and expected object '' are not equal
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - verifyNotEqual(checkToken[i], "", STOP_ON_FAILURE): Actual object 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1NywiZXhwIjoxNjk3MTY2ODUyfQ.oY1wo234jmQ-2mAuZdY32A4zZ5maN6S8nRJ6bnKsOQA' and expected object '' are not equal
+
+2023-10-13 09:44:13 - [MESSAGE][PASSED] - Actual object 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1NywiZXhwIjoxNjk3MTY2ODUyfQ.oY1wo234jmQ-2mAuZdY32A4zZ5maN6S8nRJ6bnKsOQA' and expected object '' are not equal
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - verifyNotEqual(checkToken[i], "", STOP_ON_FAILURE): Actual object 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1NywiZXhwIjoxNjk3MjUxNDUyfQ.IQDnc5HA_1DuS-UlE6dZkZgth2lRymeTAnI2ldxUftw' and expected object '' are not equal
+
+2023-10-13 09:44:13 - [MESSAGE][PASSED] - Actual object 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1NywiZXhwIjoxNjk3MjUxNDUyfQ.IQDnc5HA_1DuS-UlE6dZkZgth2lRymeTAnI2ldxUftw' and expected object '' are not equal
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - authToken = accessToken: null
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - println("extracted here : " + accessToken): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Task Management - Owner POV/TC-001" time="0.851" classname="Test Cases/Task Management - Owner POV/TC-001" status="PASSED">
+         <system-out><![CDATA[2023-10-13 09:44:13 - [TEST_CASE][PASSED] - Test Cases/Task Management - Owner POV/TC-001: Test Cases/Task Management - Owner POV/TC-001
+
+2023-10-13 09:44:13 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Task Management/Task Creations", ["BASE_URL":BASE_URL, "TOKEN":authToken])): Send request and verify the response successfully
+
+2023-10-13 09:44:14 - [MESSAGE][INFO] - HAR: C:\Users\rahad\Main\Source Code\qarpa-testing\Reports\20231013_094408\Owner Test Suites\Test Suites - Owner - 01\20231013_094408\requests\main\1.har
+
+2023-10-13 09:44:14 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-10-13 09:44:14 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-10-13 09:44:14 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-10-13 09:44:14 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-10-13 09:44:14 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-10-13 09:44:14 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-10-13 09:44:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2023-10-13 09:44:14 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-10-13 09:44:10 - [TEST_SUITE][PASSED] - Test Suites - Owner - 01: Test Cases/Task Management - Owner POV/TC-001]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

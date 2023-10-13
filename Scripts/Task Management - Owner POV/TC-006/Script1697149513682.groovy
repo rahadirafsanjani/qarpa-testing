@@ -17,7 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequestAndVerify(findTestObject('Task Management/Task Creations', [('BASE_URL') : GlobalVariable.BASE_URL, ('TOKEN') : GlobalVariable.authToken]))
-
-WS.verifyResponseStatusCode(response, 201)
-
